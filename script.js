@@ -240,6 +240,8 @@ const essentialData = books.map((book) => {
   };
 });
 essentialData;
+
+
 // ARRAY FILTER METHOD
 const longBooksWithMovie = books
 .filter((book) => book.pages > 500)
@@ -250,10 +252,14 @@ const adventureBooks = books
 .map((book) => book.title);
 adventureBooks;
 
-//ARRAY REDUCE METHOD
 
+
+
+//ARRAY REDUCE METHOD
 const pagesAllBooks = books.reduce((sum, book) => sum + book.pages, 0);
 pagesAllBooks;
+
+
 
 //ARRAY SORT METHOD
 const y = [3, 7, 1, 9, 6];
@@ -262,7 +268,11 @@ sorted;
 const sortedByPages = books.slice().sort((a, b) => b.pages - a.pages);
 sortedByPages;
 
+
+
+
 //IMMUTABLE ARRAYS
+
 // 1) Add book object to array
 const newBook = {
   id: 6,
@@ -280,6 +290,9 @@ book.id === 1 ? { ...book, pages: 1210 } : book
 );
 booksAfterUpdate;
 */
+
+//ASYNC AWAIT for APIs
+
 // fetch("https://jsonplaceholder.typicode.com/todos")
 //   .then((res) => res.json())
 //   .then((data) => console.log(data));
